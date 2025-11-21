@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>VOIPCOMMAND — Central de Comandos Asterisk</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <img src="logo.voipcommand.png" alt="VOIPCOMMAND Logo">
+    <a href="links.html" class="nav-btn"><span class="material-icons">link</span>Links Úteis</a>
+  </header>
+
+  <div class="container">
+    <h1 class="main-title">Central de Comandos Asterisk</h1>
+    <p class="main-lead">Digite uma ação (ex: "ver registros", "listar endpoints") e veja o comando correspondente.</p>
+
+    <div class="search-wrap">
+      <span class="material-icons search-icon">search</span>
+      <input id="campo-busca" class="search-input" placeholder="Buscar comando ou função...">
+    </div>
+
+    <div id="toast" class="toast">Comando copiado!</div>
+    <div id="resultados" class="results-grid"></div>
+
+    <!-- SOBRE ASTERISK -->
+    <div class="about-section">
+      <div class="about-card">
+        <h3>História do Asterisk & Telefonia</h3>
+        <p>O Asterisk revolucionou o mercado ao permitir que qualquer empresa criasse seu próprio PABX IP de forma econômica, flexível e totalmente personalizável.</p>
+      </div>
+      <div class="about-card">
+        <h3>Vantagens & Desvantagens</h3>
+        <p><b>Vantagens:</b> baixo custo, flexível, open source, escalável.<br>
+        <b>Desvantagens:</b> exige conhecimento técnico e boa infraestrutura.</p>
+      </div>
+      <div class="about-card">
+        <h3>Parceiro Oficial — Union Telecom</h3>
+        <p>A Union Telecom é referência em venda, instalação e manutenção de PABX profissionais.</p>
+        <p>Site oficial: <a href="https://www.uniontelecom.com.br" target="_blank" style="color:#ff7b00;">Clique aqui</a></p>
+      </div>
+    </div>
+  </div>
+
+  <footer>VOIPCOMMAND • Desenvolvido para agilizar o suporte em Asterisk e Telefonia VoIP.</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

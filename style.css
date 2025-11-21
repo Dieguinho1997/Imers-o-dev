@@ -1,0 +1,245 @@
+/* ======== FONTS ======== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;600&display=swap');
+
+/* ======== GLOBAL ======== */
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: radial-gradient(circle at top, #141414, #000);
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* ======== HEADER ======== */
+header {
+    background: rgba(255, 140, 0, 0.08);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(255, 140, 0, 0.25);
+    padding: 18px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 0 20px rgba(255, 140, 0, 0.15);
+}
+
+header img {
+    height: 72px;
+    filter: drop-shadow(0 0 12px rgba(255, 140, 0, 0.6));
+    transition: transform 0.3s ease;
+}
+
+header img:hover {
+    transform: scale(1.05);
+}
+
+.nav-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 140, 0, 0.25);
+    color: white;
+    padding: 10px 18px;
+    border-radius: 14px;
+    text-decoration: none;
+    transition: 0.25s ease;
+}
+
+.nav-btn:hover {
+    background: rgba(255, 140, 0, 0.4);
+    box-shadow: 0 0 12px rgba(255, 140, 0, 0.6);
+    transform: translateY(-3px);
+}
+
+/* ======== CONTAINER ======== */
+.container {
+    max-width: 1100px;
+    margin: 35px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* ======== TITLES ======== */
+.main-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: #ff8c00;
+    text-shadow: 0 0 18px rgba(255, 140, 0, 0.8);
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.main-lead {
+    font-size: 1.2rem;
+    color: #ccc;
+    opacity: 0.85;
+    margin-bottom: 35px;
+}
+
+/* ======== SEARCH BAR ======== */
+.search-wrap {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 20px 20px 20px 65px;
+    font-size: 1.2rem;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 140, 0, 0.3);
+    background: rgba(255, 255, 255, 0.045);
+    color: white;
+    backdrop-filter: blur(6px);
+    transition: 0.25s;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #ff8c00;
+    box-shadow: 0 0 20px rgba(255, 140, 0, 0.6);
+}
+
+.search-icon {
+    position: absolute;
+    left: 22px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: #ff8c00;
+    opacity: 0.8;
+}
+
+/* ======== GRID DE RESULTADOS ======== */
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    gap: 28px;
+}
+
+/* ======== CARD ======== */
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 140, 0, 0.25);
+    border-radius: 22px;
+    padding: 25px;
+    backdrop-filter: blur(14px);
+    cursor: pointer;
+    transition: 0.3s ease;
+    opacity: 0;
+    animation: fadeUp 0.45s ease forwards;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px rgba(255, 140, 0, 0.55);
+}
+
+.card-comando {
+    font-family: 'Courier New', monospace;
+    background: #0a0a0a;
+    padding: 12px;
+    border-radius: 10px;
+    color: #ffb566;
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+}
+
+.card-desc {
+    font-size: 15px;
+    color: #ddd;
+    opacity: 0.85;
+    line-height: 1.5;
+}
+
+/* ======== SOBRE ======== */
+.about-section {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.about-card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 140, 0, 0.2);
+    border-radius: 22px;
+    padding: 25px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.about-card:hover {
+    box-shadow: 0 0 18px rgba(255, 140, 0, 0.4);
+    transform: translateY(-5px);
+}
+
+.icon {
+    font-size: 45px;
+    color: #ff8c00;
+    margin-bottom: 10px;
+}
+
+.about-card h3 {
+    color: #ffae4d;
+    font-weight: 600;
+    font-family: 'Poppins';
+}
+
+.about-card p {
+    font-size: 14px;
+    opacity: 0.85;
+}
+
+/* ======== TOAST ======== */
+.toast {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ff8c00;
+    color: #000;
+    padding: 16px 30px;
+    border-radius: 12px;
+    font-weight: bold;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.35s ease;
+}
+
+.toast.show {
+    opacity: 1;
+    visibility: visible;
+    bottom: 50px;
+}
+
+/* ======== FOOTER ======== */
+footer {
+    margin-top: 40px;
+    padding: 35px;
+    text-align: center;
+    color: #999;
+    border-top: 1px solid rgba(255, 140, 0, 0.15);
+    font-size: 0.95rem;
+}
+
+/* ======== ANIMAÇÕES ======== */
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(25px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ======== RESPONSIVO ======== */
+@media(max-width: 768px) {
+    .main-title { font-size: 2rem; }
+    .about-section { grid-template-columns: 1fr; }
+    header img { height: 58px; }
+    .search-icon {
+      left: 15px; /* Ajusta a posição do ícone em telas menores */
+      left: calc(50% - 250px); /* Mantém o posicionamento relativo ao input */
+    }
+}

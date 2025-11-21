@@ -1,0 +1,246 @@
+[
+    {
+        "comandos": "core show help",
+        "descrição": "Exibe uma lista de todos os comandos disponíveis na CLI do Asterisk, sendo um ponto de partida para explorar as funcionalidades."
+    },
+    {
+        "comandos": "sip show peers",
+        "descrição": "Lista todos os peers (ramais e troncos) SIP configurados, mostrando status de registro, endereço IP e outras informações cruciais."
+    },
+    {
+        "comandos": "sip show registry",
+        "descrição": "Mostra o status dos registros SIP com provedores externos (troncos), útil para verificar se a conexão com a operadora VoIP está ativa."
+    },
+    {
+        "comandos": "dialplan show",
+        "descrição": "Exibe o plano de discagem (dialplan) configurado, permitindo analisar o fluxo de chamadas e as regras de roteamento."
+    },
+    {
+        "comandos": "core show channels",
+        "descrição": "Lista todas as chamadas ativas no sistema em tempo real, incluindo informações como canal, contexto e duração."
+    },
+    {
+        "comandos": "pjsip show endpoints",
+        "descrição": "Para a pilha de canais PJSIP, este comando lista todos os endpoints configurados e seu status de contato."
+    },
+    {
+        "comandos": "sngrep -c",
+        "descrição": "Monitora chamadas SIP em tempo real, exibindo o fluxo de mensagens. Use 'sngrep -c -i' se necessário."
+    },
+    {
+        "comandos": "asterisk -rx 'core show channels verbose'",
+        "descrição": "Verifica todas as chamadas ativas (canais presos) com detalhes verbosos."
+    },
+    {
+        "comandos": "hangup request channel (NOME CANAL)",
+        "descrição": "Força o desligamento (derruba) um canal ou chamada específica."
+    },
+    {
+        "comandos": "asterisk -rx 'database show' | grep RAMAL",
+        "descrição": "Mostra a descrição ou dados associados a um ramal específico no banco de dados interno do Asterisk."
+    },
+    {
+        "comandos": "core set verbose 0",
+        "descrição": "Para ou diminui o nível de logs exibidos na CLI do Asterisk em tempo real."
+    },
+    {
+        "comandos": "queue show",
+        "descrição": "Exibe o status de todas as filas (queues), incluindo membros, chamadas em espera e estatísticas."
+    },
+    {
+        "comandos": "rasterisk -rx 'queue remove member SIP/XXXX from NOME-FILA'",
+        "descrição": "Remove um agente (membro) de uma fila específica."
+    },
+    {
+        "comandos": "database deltree",
+        "descrição": "Apaga uma árvore de chaves do banco de dados interno do Asterisk. Ex: 'database deltree Agente/600'."
+    },
+    {
+        "comandos": "mfcr2 show channels",
+        "descrição": "Verifica o status dos canais em um link digital E1 com sinalização R2/MFC-R2."
+    },
+    {
+        "comandos": "ifconfig",
+        "descrição": "Comando Linux para verificar as configurações de todas as interfaces de rede e seus IPs."
+    },
+    {
+        "comandos": "curl ipinfo.io",
+        "descrição": "Comando Linux que mostra o endereço IP público do servidor e informações de geolocalização."
+    },
+    {
+        "comandos": "su - ou sudo su",
+        "descrição": "Comando Linux para obter privilégios de superusuário (root)."
+    },
+    {
+        "comandos": "ssh suporte@IPCLIENTE",
+        "descrição": "Comando Linux para iniciar uma conexão SSH com um servidor remoto."
+    },
+    {
+        "comandos": "/etc/init.d/firewall restart",
+        "descrição": "Comando Linux (CentOS/sistemas mais antigos) para reiniciar o serviço de firewall."
+    },
+    {
+        "comandos": "systemctl restart openvpn",
+        "descrição": "Comando Linux (SystemD) para reiniciar o serviço do OpenVPN."
+    },
+    {
+        "comandos": "echo 3 > /proc/sys/vm/drop_caches",
+        "descrição": "Comando Linux para limpar a memória cache do sistema. Use com cuidado."
+    },
+    {
+        "comandos": "iptables -I INPUT -s IP_A_BLOQUEAR -j DROP",
+        "descrição": "Comando Linux para bloquear um endereço de IP (DROP) no firewall (iptables)."
+    },
+    {
+        "comandos": "lsof",
+        "descrição": "Comando Linux para listar arquivos abertos e os processos que os estão utilizando."
+    },
+    {
+        "comandos": "route -n",
+        "descrição": "Comando Linux para exibir a tabela de roteamento do kernel."
+    },
+    {
+        "comandos": "rm -rf full.*",
+        "descrição": "Comando Linux para apagar os arquivos de log 'full' do Asterisk. Local: /var/log/asterisk."
+    },
+    {
+        "comandos": "scp",
+        "descrição": "Comando Linux (Secure Copy) para copiar arquivos de forma segura entre servidores. Ex: scp usuario@origem:/caminho/arquivo usuario@destino:/caminho/"
+    },
+    {
+        "comandos": "tail -f nome_do_arquivo.log",
+        "descrição": "Comando Linux para monitorar um arquivo de log em tempo real, exibindo novas linhas assim que são adicionadas."
+    },
+    {
+        "comandos": "nmap -p 5060 -sU IP_DO_ALVO",
+        "descrição": "Comando para verificar se a porta 5060 (padrão SIP) está aberta/filtrada em um alvo, usando pacotes UDP."
+    },
+    {
+        "comandos": "pjsip list channels",
+        "descrição": "Lista os canais PJSIP ativos."
+    },
+    {
+        "comandos": "pjsip show channels",
+        "descrição": "Mostra os canais PJSIP ativos."
+    },
+    {
+        "comandos": "pjsip show registrations",
+        "descrição": "Exibe os registros PJSIP."
+    },
+    {
+        "comandos": "pjsip show contacts",
+        "descrição": "Mostra a latência dos ramais/troncos PJSIP."
+    },
+    {
+        "comandos": "pjsip show identifies",
+        "descrição": "Lista os troncos PJSIP."
+    },
+    {
+        "comandos": "pjsip show channelsstats",
+        "descrição": "Mostra estatísticas detalhadas dos canais PJSIP ativos."
+    },
+    {
+        "comandos": "pjsip show endpoint XXXX",
+        "descrição": "Exibe informações detalhadas do ramal PJSIP especificado."
+    },
+    {
+        "comandos": "fail2ban-client unban --all",
+        "descrição": "Libera o acesso de todos os IPs bloqueados pelo Fail2Ban."
+    },
+    {
+        "comandos": "pjsip show endpoint NOME",
+        "descrição": "Exibe informações detalhadas de um endpoint PJSIP específico, como status, contatos e configurações."
+    },
+    {
+        "comandos": "pjsip show contacts NOME",
+        "descrição": "Mostra o status de um contato PJSIP específico, incluindo informações de latência e URI."
+    },
+    {
+        "comandos": "pjsip show aors",
+        "descrição": "Lista todos os objetos 'Address of Record' (AOR), que indicam onde um usuário pode ser alcançado."
+    },
+    {
+        "comandos": "pjsip show auths",
+        "descrição": "Exibe as configurações de autenticação para os endpoints PJSIP."
+    },
+    {
+        "comandos": "pjsip qualify endpoint NOME",
+        "descrição": "Envia manualmente um pacote de qualificação (OPTIONS) para um endpoint para verificar sua disponibilidade."
+    },
+    {
+        "comandos": "pjsip set logger on",
+        "descrição": "Ativa o log de mensagens SIP da pilha PJSIP diretamente na CLI do Asterisk para depuração."
+    },
+    {
+        "comandos": "pjsip send options NOME",
+        "descrição": "Envia uma requisição SIP OPTIONS para um endpoint PJSIP, útil para testes de conectividade."
+    },
+    {
+        "comandos": "sip show peer NOME",
+        "descrição": "Mostra informações detalhadas de um peer SIP (chan_sip) específico, incluindo status e endereço IP."
+    },
+    {
+        "comandos": "sip show users",
+        "descrição": "Lista todos os usuários configurados no driver de canal chan_sip."
+    },
+    {
+        "comandos": "sip set debug on",
+        "descrição": "Ativa a depuração SIP (chan_sip) para exibir todo o tráfego SIP na CLI."
+    },
+    {
+        "comandos": "sip set debug ip 192.168.1.10",
+        "descrição": "Ativa a depuração SIP (chan_sip) para um endereço IP específico, filtrando o tráfego."
+    },
+    {
+        "comandos": "core restart now",
+        "descrição": "Reinicia o Asterisk imediatamente. CUIDADO: Todas as chamadas ativas serão derrubadas."
+    },
+    {
+        "comandos": "core restart gracefully",
+        "descrição": "Inicia uma reinicialização 'graciosa' do Asterisk, aguardando o término das chamadas ativas."
+    },
+    {
+        "comandos": "core show version",
+        "descrição": "Exibe a versão exata do Asterisk que está em execução no servidor."
+    },
+    {
+        "comandos": "dialplan reload",
+        "descrição": "Recarrega o plano de discagem (dialplan) a partir do arquivo extensions.conf sem reiniciar o Asterisk."
+    },
+    {
+        "comandos": "sip reload",
+        "descrição": "Recarrega a configuração do módulo chan_sip, aplicando alterações feitas no arquivo sip.conf."
+    },
+    {
+        "comandos": "pjsip reload",
+        "descrição": "Recarrega a configuração do módulo PJSIP, aplicando alterações feitas nos arquivos pjsip.conf e relacionados."
+    },
+    {
+        "comandos": "df -h",
+        "descrição": "Comando Linux que exibe o uso de espaço em disco de todas as partições em formato legível (human-readable)."
+    },
+    {
+        "comandos": "free -h",
+        "descrição": "Comando Linux que mostra a quantidade de memória RAM usada e livre no sistema em formato legível."
+    },
+    {
+        "comandos": "ps aux | grep asterisk",
+        "descrição": "Comando Linux que lista todos os processos em execução e filtra para encontrar o processo do Asterisk."
+    },
+    {
+        "comandos": "systemctl restart asterisk",
+        "descrição": "Comando Linux (SystemD) para reiniciar o serviço do Asterisk."
+    },
+    {
+        "comandos": "systemctl status asterisk",
+        "descrição": "Comando Linux (SystemD) para verificar o status atual do serviço do Asterisk."
+    },
+    {
+        "comandos": "top",
+        "descrição": "Comando Linux que exibe uma lista dinâmica e em tempo real dos processos que mais consomem recursos do sistema."
+    },
+    {
+        "comandos": "htop",
+        "descrição": "Uma versão interativa e melhorada do comando 'top', oferecendo mais recursos para gerenciamento de processos."
+    }
+]

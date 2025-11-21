@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links Úteis - VOI Asterisk</title>
+
+    <!-- Google Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: radial-gradient(circle at top, #1a1a1a, #000);
+            color: white;
+            overflow-x: hidden;
+        }
+
+        /* HEADER */
+        header {
+            background: rgba(255, 115, 0, 0.15);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 115, 0, 0.3);
+            padding: 20px;
+            text-align: center;
+        }
+
+        header img {
+            height: 90px;
+            filter: drop-shadow(0 0 10px orange);
+        }
+
+        /* GRID DOS LINKS */
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 30px;
+        }
+
+        /* CARD PREMIUM */
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 115, 0, 0.3);
+            padding: 25px;
+            border-radius: 20px;
+            backdrop-filter: blur(12px);
+            text-align: center;
+            transition: transform 0.25s, box-shadow 0.25s;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 0 25px rgba(255, 115, 0, 0.5);
+        }
+
+        .icon {
+            font-size: 50px;
+            color: orange;
+            margin-bottom: 10px;
+            text-shadow: 0 0 8px orange;
+        }
+
+        .card h3 {
+            margin: 10px 0;
+            color: #ffa64d;
+        }
+
+        .card p {
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        /* ANIMAÇÃO DE ENTRADA */
+        .card {
+            animation: fadeInUp 0.6s ease forwards;
+            opacity: 0;
+        }
+
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="logo.voipcommand.png" alt="Logo VOI">
+</header>
+
+<h1 style="text-align:center; margin-top: 20px; color: orange; text-shadow: 0 0 10px orange;">
+    🔗 Links Úteis de Telefonia & Asterisk
+</h1>
+
+<div class="container">
+
+    <a href="https://docs.asterisk.org/" target="_blank" style="text-decoration:none; color:white;">
+        <div class="card">
+            <span class="material-icons icon">menu_book</span>
+            <h3>Documentação Oficial Asterisk</h3>
+            <p>Toda a documentação oficial do Asterisk para consulta técnica completa.</p>
+        </div>
+    </a>
+
+    <a href="https://www.voip-info.org/" target="_blank" style="text-decoration:none; color:white;">
+        <div class="card">
+            <span class="material-icons icon">language</span>
+            <h3>VoIP Info</h3>
+            <p>Wiki mundial sobre VoIP, Asterisk e protocolos SIP/RTP.</p>
+        </div>
+    </a>
+
+    <a href="https://www.uniontelecom.com.br/" target="_blank" style="text-decoration:none; color:white;">
+        <div class="card">
+            <span class="material-icons icon">apartment</span>
+            <h3>Union Telecom</h3>
+            <p>Empresa especializada em telefonia IP e soluções em Asterisk.</p>
+        </div>
+    </a>
+
+    <a href="https://github.com/asterisk" target="_blank" style="text-decoration:none; color:white;">
+        <div class="card">
+            <span class="material-icons icon">code</span>
+            <h3>Asterisk GitHub</h3>
+            <p>Código-fonte oficial, releases e contribuições do projeto Asterisk.</p>
+        </div>
+    </a>
+
+    <a href="index.html" style="text-decoration:none; color:white;">
+        <div class="card">
+            <span class="material-icons icon">arrow_back</span>
+            <h3>Voltar</h3>
+            <p>Retornar para a página principal de comandos.</p>
+        </div>
+    </a>
+
+</div>
+
+</body>
+</html>
